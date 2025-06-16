@@ -1,11 +1,441 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio of Akdenis Niaziev, a Full-Stack Web Developer specializing in modern web technologies."
+    />
     <title>Akdenis Niaziev | Portfolio</title>
-</head>
-<body>
-    
-</body>
+    <!-- favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="./assets/my-favicon/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="./assets/my-favicon/favicon.svg"
+    />
+    <link rel="shortcut icon" href="./assets/my-favicon/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/my-favicon/apple-touch-icon.png"
+    />
+    <link rel="manifest" href="./assets/my-favicon/site.webmanifest" />
+    <!-- styles + fonts -->
+    <link rel="stylesheet" href="public/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <div class="nav__logo">
+          <img
+            src="./assets/icons/Akdenis.webp"
+            alt="Logo"
+            class="nav__logo-img"
+          />
+        </div>
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="#skills" class="nav__link">Skills</a>
+          </li>
+          <li class="nav__item">
+            <a href="#projects" class="nav__link">Projects</a>
+          </li>
+          <li class="nav__item">
+            <a href="#resume" class="nav__link">Resume</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Contact</a>
+          </li>
+        </ul>
+        <div class="nav__controls">
+          <button id="theme-toggle" class="nav__theme-toggle">
+            <img
+              src="./assets/icons/moon.png"
+              alt="Theme Icon"
+              class="nav__theme-icon"
+            />
+          </button>
+          <button id="hamburger" class="nav__hamburger">
+            <span class="nav__hamburger-bar"></span>
+            <span class="nav__hamburger-bar"></span>
+            <span class="nav__hamburger-bar"></span>
+          </button>
+        </div>
+      </nav>
+      <div class="mobile-menu" id="mobile-menu">
+        <ul class="mobile-menu__list">
+          <li class="mobile-menu__item">
+            <a href="#about" class="mobile-menu__link">About</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#skills" class="mobile-menu__link">Skills</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#projects" class="mobile-menu__link">Projects</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#resume" class="mobile-menu__link">Resume</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#contact" class="mobile-menu__link">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="hero" id="home">
+        <div class="hero__overlay"></div>
+        <div class="hero__particles">
+          <span></span>
+        </div>
+        <div class="hero__content">
+          <h1 class="hero__title">
+            <span class="hero__title-char">A</span
+            ><span class="hero__title-char">k</span
+            ><span class="hero__title-char">d</span
+            ><span class="hero__title-char">e</span
+            ><span class="hero__title-char">n</span
+            ><span class="hero__title-char">i</span
+            ><span class="hero__title-char">s</span>
+            <span class="hero__title-char">N</span
+            ><span class="hero__title-char">i</span
+            ><span class="hero__title-char">a</span
+            ><span class="hero__title-char">z</span
+            ><span class="hero__title-char">i</span
+            ><span class="hero__title-char">e</span
+            ><span class="hero__title-char">v</span>
+          </h1>
+          <p class="hero__subtitle">Full-Stack Developer</p>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <h2 class="about__title">About Me</h2>
+        <p class="about__description">
+          I'm Akdenis Niaziev, I am a motivated and detail-oriented professional
+          with a background in both retail and industrial environments. I am
+          currently studying Web Development at Arteveldehogeschool in Ghent,
+          where I focus on programming, UI/UX design, and interactive
+          technologies. With prior experience in retail operations and machine
+          handling, I bring a strong work ethic, problem-solving mindset, and
+          passion for continuous learning. My goal is to become a Full-Stack
+          Developer and contribute to innovative digital projects.
+        </p>
+      </section>
+
+      <section class="skills" id="skills">
+        <h2 class="skills__title">Skills</h2>
+        <div class="skills__slider">
+          <ul class="skills__list">
+            <li class="skills__item">
+              <img
+                src="./assets/icons/html.png"
+                alt="HTML"
+                class="skills__icon"
+              />
+              <span class="skills__item-text">HTML</span>
+            </li>
+            <li class="skills__item">
+              <img
+                src="./assets/icons/css.png"
+                alt="CSS"
+                class="skills__icon"
+              />
+              <span class="skills__item-text">CSS</span>
+            </li>
+            <li class="skills__item">
+              <img
+                src="./assets/icons/js.png"
+                alt="JavaScript"
+                class="skills__icon"
+              />
+              <span class="skills__item-text">JavaScript</span>
+            </li>
+            <li class="skills__item">
+              <img
+                src="./assets/icons/react.png"
+                alt="React.js"
+                class="skills__icon"
+              />
+              <span class="skills__item-text">React.js</span>
+            </li>
+            <li class="skills__item">
+              <img
+                src="./assets/icons/nodejs.png"
+                alt="Node.js"
+                class="skills__icon"
+              />
+              <span class="skills__item-text">Node.js</span>
+            </li>
+            <li class="skills__item">
+               <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            class="skills__icon"
+            role="img"
+            aria-hidden="true"
+          >
+           <path d="M24 18.588a1.529 1.529 0 0 1-1.895-.72l-3.45-4.771-.5-.667-4.003 5.444a1.466 1.466 0 0 1-1.802.708l5.158-6.92-4.798-6.251a1.595 1.595 0 0 1 1.9.666l3.576 4.83 3.596-4.81a1.435 1.435 0 0 1 1.788-.668L21.708 7.9l-2.522 3.283a.666.666 0 0 0 0 .994l4.804 6.412zM.002 11.576l.42-2.075c1.154-4.103 5.858-5.81 9.094-3.27 1.895 1.489 2.368 3.597 2.275 5.973H1.116C.943 16.447 4.005 19.009 7.92 17.7a4.078 4.078 0 0 0 2.582-2.876c.207-.666.548-.78 1.174-.588a5.417 5.417 0 0 1-2.589 3.957 6.272 6.272 0 0 1-7.306-.933 6.575 6.575 0 0 1-1.64-3.858c0-.235-.08-.455-.134-.666A88.33 88.33 0 0 1 0 11.577zm1.127-.286h9.654c-.06-3.076-2.001-5.258-4.59-5.278-2.882-.04-4.944 2.094-5.071 5.264z"></path>
+          </svg>
+              <span class="skills__item-text">Express</span>
+            </li>
+            <li class="skills__item">
+              <img
+                src="./assets/icons/php.png"
+                alt="PHP"
+                class="skills__icon"
+              />
+              <span class="skills__item-text">PHP</span>
+            </li>
+            <li class="skills__item">
+              <img
+                src="./assets/icons/laravel.png"
+                alt="Laravel"
+                class="skills__icon"
+              />
+              <span class="skills__item-text">Laravel</span>
+            </li>
+            <li class="skills__item">
+              <img
+                src="./assets/icons/mysql.png"
+                alt="MySQL"
+                class="skills__icon"
+              />
+              <span class="skills__item-text">MySQL</span>
+            </li>
+            <li class="skills__item">
+              <img
+                src="./assets/icons/craftcms.png"
+                alt="Craft CMS"
+                class="skills__icon"
+              />
+              <span class="skills__item-text">Craft CMS</span>
+            </li>
+            <li class="skills__item">
+              <img
+                src="./assets/icons/json.png"
+                alt="JSON"
+                class="skills__icon"
+              />
+              <span class="skills__item-text">JSON</span>
+            </li>
+            <li class="skills__item">
+              <img
+                src="./assets/icons/webpack.png"
+                alt="Webpack"
+                class="skills__icon"
+              />
+              <span class="skills__item-text">Webpack</span>
+            </li>
+            <li class="skills__item">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 496 512"
+            class="skills__icon"
+            role="img"
+            aria-hidden="true"
+          >
+            <path
+              d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+            ></path>
+          </svg>
+          <span class="skills__item-text">GitHub</span>
+        </li>
+            <li class="skills__item">
+              <img
+                src="./assets/icons/git.png"
+                alt="Git"
+                class="skills__icon"
+              />
+              <span class="skills__item-text">Git</span>
+            </li>
+            <li class="skills__item">
+              <img
+                src="./assets/icons/csharp.png"
+                alt="C#"
+                class="skills__icon"
+              />
+              <span class="skills__item-text">C#</span>
+            </li>
+            <li class="skills__item">
+              <img
+                src="./assets/icons/cpp.png"
+                alt="C++"
+                class="skills__icon"
+              />
+              <span class="skills__item-text">C++</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="projects" id="projects">
+        <h2 class="projects__title">Projects</h2>
+        <div class="projects__grid">
+          <article class="project">
+            <h3 class="project__title">STAM Website</h3>
+            <p class="project__description">
+              A responsive website for STAM, showcasing modern design and
+              interactivity.
+            </p>
+            <a
+              href="https://pgm-2425-atwork-1.github.io/project-1-pgm-akdeniaz/"
+              target="_blank"
+              class="project__link"
+              >Visit Site</a
+            >
+          </article>
+          <article class="project">
+            <h3 class="project__title">BestOf2024</h3>
+            <p class="project__description">
+              A curated platform highlighting the best of 2024 with sleek
+              animations.
+            </p>
+            <a
+              href="https://pgm-2425-atwork-1.github.io/project-2-pgm-akdeniaz/"
+              target="_blank"
+              class="project__link"
+              >Visit Site</a
+            >
+          </article>
+        </div>
+      </section>
+
+      <section class="resume" id="resume">
+        <h2 class="resume__title">Resume</h2>
+        <article class="resume__item">
+          <h3 class="resume__subtitle">Education</h3>
+          <p class="resume__description">
+            Full-Stack Developer Graduate Programming – Arteveldehogeschool,
+            Ghent (Sep 2024 – Aug 2026)
+          </p>
+        </article>
+        <article class="resume__item">
+          <h3 class="resume__subtitle">Experience</h3>
+          <p class="resume__description">
+            Worker at Volvo Cars (Aug 2020 – Sep 2023) – Machine operation,
+            quality control, team coordination.<br />
+            Retail Associate at Carrefour (Mar 2021 – Jun 2021) – Customer
+            service, inventory, and cashier operations.
+          </p>
+        </article>
+      </section>
+
+      <section class="contact" id="contact">
+        <h2 class="contact__title">Contact Me</h2>
+        <form
+          action="https://formspree.io/f/akdenis.niaziev@gmail.com"
+          method="POST"
+          class="contact__form"
+          id="contact-form"
+        >
+          <input
+            type="hidden"
+            name="_subject"
+            value="New Contact Form Submission"
+          />
+          <input
+            type="text"
+            name="name"
+            placeholder="Full Name"
+            class="contact__input"
+            required
+          />
+          <input
+            type="email"
+            name="_replyto"
+            placeholder="Email"
+            class="contact__input"
+            required
+          />
+          <input
+            type="tel"
+            name="phone"
+            placeholder="Phone Number"
+            class="contact__input"
+          />
+          <input
+            type="text"
+            name="subject"
+            placeholder="Subject"
+            class="contact__input"
+            required
+          />
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            class="contact__textarea"
+            required
+          ></textarea>
+          <button type="submit" class="contact__submit">Send Message</button>
+        </form>
+      </section>
+    </main>
+
+    <button class="back-to-top" id="back-to-top" aria-label="Back to Top">
+      ⬆
+    </button>
+
+    <footer class="footer">
+      <nav class="social-icons" aria-label="Social media links">
+        <a
+          href="https://github.com/pgm-akdeniaz"
+          class="social-icons__link"
+          target="_blank"
+          rel="noopener"
+          aria-label="GitHub"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 496 512"
+            class="social-icons__icon"
+            role="img"
+            aria-hidden="true"
+          >
+            <path
+              d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+            ></path>
+          </svg>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/akdenis-niaziev/"
+          class="social-icons__link"
+          target="_blank"
+          rel="noopener"
+          aria-label="LinkedIn"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"
+            class="social-icons__icon"
+            role="img"
+            aria-hidden="true"
+          >
+            <path
+              d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+            ></path>
+          </svg>
+        </a>
+      </nav>
+      <p class="footer__text">© 2025 Akdenis Niaziev. All Rights Reserved.</p>
+    </footer>
+
+    <script src="./main.js"></script>
+  </body>
 </html>
