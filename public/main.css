@@ -215,10 +215,13 @@ section h2 {
 .hero__subtitle {
   font-size: var(--font-size-large);
   color: var(--primary-color);
-  position: relative;
-  overflow: hidden;
-  white-space: nowrap;
-  animation: typing 2s steps(20) 1.6s forwards;
+}
+.hero__subtitle-char {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(10px);
+  animation: subtitleCharFadeIn 0.5s ease calc(1.6s + var(--char-index) * 0.05s)
+    forwards;
 }
 .hero__title-char {
   display: inline-block;
@@ -426,7 +429,8 @@ section h2 {
   color: var(--text-color);
 }
 
-.skills__icon:hover + .skills__item-text {
+.skills__icon:hover + .skills__item-text,
+.skills__item-text.skills__item-text--active {
   opacity: 1;
   transform: translateX(-50%) translateY(0);
   pointer-events: auto;
@@ -565,6 +569,18 @@ section h2 {
   visibility: visible;
 }
 
+/* ========== Section Scroll Animations ========== */
+section.section--hidden {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+section.section--visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
 /* ========== Animations ========== */
 @keyframes fadeInUp {
   to {
@@ -578,12 +594,19 @@ section h2 {
     transform: translateY(0);
   }
 }
-@keyframes typing {
-  from {
-    width: 0;
+@keyframes subtitleCharFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(10px) scale(0.8);
   }
-  to {
-    width: 100%;
+  60% {
+    opacity: 1;
+    transform: translateY(-5px) scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    text-shadow: 0 0 5px rgba(26, 115, 232, 0.5);
   }
 }
 @keyframes particleFloat {
@@ -677,7 +700,7 @@ body.dark .contact__textarea::placeholder {
 }
 
 /* ========== Responsive Media Queries ========== */
-@media (min-width: 48.0625rem) {
+@media (min-width: 48rem) {
   .nav__list {
     display: flex;
   }
@@ -716,7 +739,7 @@ body.dark .contact__textarea::placeholder {
     font-size: 1.2rem;
   }
 
-   .skills__list {
+  .skills__list {
     animation: scrollSkills 30s linear infinite;
   }
 
