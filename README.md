@@ -16,7 +16,7 @@ Welcome to my personal portfolio — a responsive, accessible, and interactive s
   - [🧩 Installation](#-installation)
   - [📜 License](#-license)
   - [📬 Contact](#-contact)
-  
+
 ---
 
 ## 📌 Overview
@@ -32,11 +32,11 @@ This portfolio functions as a digital resume — displaying my skills, education
 
 ## ✨ Features
 
-- **Mobile-Responsive Design**  
+- **Mobile-Responsive Design**
 - **Animated Hero Section with Particles**
-- **Auto-Scrolling Skills Carousel**  
+- **Auto-Scrolling Skills Carousel**
 - **Project Cards with Live Links**
-- **Dark/Light Theme Toggle**  
+- **Dark/Light Theme Toggle**
 - **Contact Form with Validation & Spam Block**
 - **Sticky Navigation + Hamburger Menu**
 - **Back-to-Top Button**
@@ -59,22 +59,31 @@ Git & GitHub, GitHub Pages (hosting)
 
 - **Frontend:** HTML, CSS, JS, React
 - **Backend:** Node.js, Express, PHP, Laravel
-- **Database:** MySQL  
-- **CMS:** Craft CMS  
+- **Database:** MySQL
+- **CMS:** Craft CMS
 - **Other:** Git, GitHub, C#, C++
 
 ---
 
 ## 🧩 Installation
 
-```bash
 git clone https://github.com/pgm-akdeniaz/portfolio.git
 cd portfolio
 
+---
+
 ## 📜 License
+
 © 2025 Akdenis Niaziev. This project is for personal/demo purposes. Please contact me for reuse or distribution.
 
+---
+
 ## 📬 Contact
+
 Email: Use the contact form on the portfolio
 GitHub: [@pgm-akdeniaz](https://github.com/pgm-akdeniaz)
 LinkedIn: [Akdenis Niaziev](https://www.linkedin.com/in/akdenis-niaziev)
+
+```bash
+
+```
