@@ -66,12 +66,10 @@ Git & GitHub, GitHub Pages (hosting)
 ---
 
 ## 🧩 Installation
-
+```bash
 git clone https://github.com/pgm-akdeniaz/portfolio.git
-
 cd portfolio
-
-
+```
 ## 📜 License
 
 © 2025 Akdenis Niaziev. This project is for personal/demo purposes. 
@@ -89,4 +87,3 @@ LinkedIn: [Akdenis Niaziev](https://www.linkedin.com/in/akdenis-niaziev)
 
 ---
 
-```bash
