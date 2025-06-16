@@ -68,19 +68,25 @@ Git & GitHub, GitHub Pages (hosting)
 ## 🧩 Installation
 
 git clone https://github.com/pgm-akdeniaz/portfolio.git
+
 cd portfolio
-bash
+
 
 ## 📜 License
 
-© 2025 Akdenis Niaziev. This project is for personal/demo purposes. Please contact me for reuse or distribution.
+© 2025 Akdenis Niaziev. This project is for personal/demo purposes. 
+Please contact me for reuse or distribution.
 
 ---
 
 ## 📬 Contact
 
 Email: Use the contact form on the portfolio
+
 GitHub: [@pgm-akdeniaz](https://github.com/pgm-akdeniaz)
+
 LinkedIn: [Akdenis Niaziev](https://www.linkedin.com/in/akdenis-niaziev)
 
 ---
+
+```bash
