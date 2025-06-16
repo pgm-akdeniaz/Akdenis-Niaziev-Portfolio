@@ -69,8 +69,7 @@ Git & GitHub, GitHub Pages (hosting)
 
 git clone https://github.com/pgm-akdeniaz/portfolio.git
 cd portfolio
-
----
+bash
 
 ## 📜 License
 
@@ -84,6 +83,4 @@ Email: Use the contact form on the portfolio
 GitHub: [@pgm-akdeniaz](https://github.com/pgm-akdeniaz)
 LinkedIn: [Akdenis Niaziev](https://www.linkedin.com/in/akdenis-niaziev)
 
-```bash
-
-```
+---
